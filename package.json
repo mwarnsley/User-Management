@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "json:server": "json-server --watch db.json"
   },
   "repository": {
     "type": "git",
@@ -50,6 +51,7 @@
   },
   "devDependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "json-server": "^0.12.0",
     "nodemon": "^1.12.1"
   }
 }
