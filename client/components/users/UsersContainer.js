@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import UsersTable from './UsersTable';
+import UsersTable from '../users/UsersTable';
 
 class UsersContainers extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {graphql} from 'react-apollo';
 import {map} from 'lodash';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import fetchCompanies from '../../queries/fetchCompanies';
 
 class CompanyList extends Component {
@@ -10,9 +10,9 @@ class CompanyList extends Component {
     const companies = data.companies;
     return (
       <div id="companies_container">
-        <Link to="/companies/addcompany" className="btn btn-default">
+        <NavLink to="/companies/addcompany" className="btn btn-default">
           Add Company
-        </Link>
+        </NavLink>
         <table className="table table-striped table-hover company-table">
           <thead>
             <tr>

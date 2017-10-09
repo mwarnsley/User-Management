@@ -23,7 +23,7 @@ const Navigation = () => {
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <NavLink to="/users/adduser">Add User</NavLink>
+              <NavLink to="/users">Users</NavLink>
             </li>
             <li>
               <NavLink to="/companies">Companies</NavLink>

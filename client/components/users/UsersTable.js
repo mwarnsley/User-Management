@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import gql from 'graphql-tag';
 import {graphql} from 'react-apollo';
 import {map} from 'lodash';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import fetchUsers from '../../queries/fetchUsers';
 
 class UsersTable extends Component {
@@ -11,6 +11,9 @@ class UsersTable extends Component {
     const users = data.users;
     return (
       <div id="users_table_container">
+        <NavLink to="/users/adduser" className="btn btn-default">
+          Add User
+        </NavLink>
         <table className="user-table table table-responsive table-striped table-hover">
           <thead>
             <tr>

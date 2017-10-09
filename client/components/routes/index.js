@@ -1,14 +1,20 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 
+import HomeContainer from '../home/HomeContainer';
 import UsersContainer from '../users/UsersContainer';
 import AddUserContainer from '../users/AddUserContainer';
 import CompaniesContainer from '../companies/CompaniesContainer';
 import AddCompanyContainer from '../companies/AddCompanyContainer';
 
 export const routes = {
-  users: {
+  home: {
     path: '/',
+    component: HomeContainer,
+    exact: true,
+  },
+  users: {
+    path: '/users',
     component: UsersContainer,
     exact: true,
   },
