@@ -1,6 +1,15 @@
 import React from 'react';
 import {render} from 'react-dom';
+import {ApolloProvider} from 'react-apollo';
 
+import ApolloClient from 'apollo-client';
 import App from './components/App';
 
-render(<App />, document.getElementById('app'));
+const client = new ApolloClient({});
+
+render(
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>,
+  document.getElementById('app')
+);

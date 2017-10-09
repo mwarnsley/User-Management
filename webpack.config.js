@@ -29,10 +29,10 @@ module.exports = {
       },
     ],
   },
-  //   plugins: [
-  //     new ExtractTextPlugin({
-  //       filename: 'bundle.css',
-  //       allChunks: true,
-  //     }),
-  //   ],
+  // plugins: [
+  //   new ExtractTextPlugin({
+  //     filename: 'bundle.css',
+  //     allChunks: true,
+  //   }),
+  // ],
 };

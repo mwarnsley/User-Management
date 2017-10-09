@@ -1,34 +1,85 @@
 {
-    "users": [
-        {
-            "id": "1",
-            "firstName": "Marcus",
-            "lastName": "Warnsley",
-            "dob": "02-16-1987",
-            "phone": "317-867-0598",
-            "email": "marcus.warnsley@gmail.com",
-            "companyId": "1"
-        },
-        {
-            "id": "2",
-            "firstName": "Samantha",
-            "lastName": "Jones",
-            "dob": "05-22-1994",
-            "phone": "317-557-7485",
-            "email": "sam.jones@yahoo.com",
-            "companyId": "2"
-        }
-    ],
-    "companies": [
-        {
-            "id": "1",
-            "name": "Google",
-            "description": "Search for information about (someone or something) on the Internet using the search engine Google."
-        },
-        {
-            "id": "2",
-            "name": "Facebook",
-            "description": "Spend time using the social networking website Facebook."
-        }
-    ]
+  "users": [
+    {
+      "firstName": "James",
+      "lastName": "Johnson",
+      "dob": "03-13-1976",
+      "phone": "317-567-8756",
+      "email": "james.johnson@hotmail.com",
+      "id": "S1GNONd3W",
+      "companyId": "1"
+    },
+    {
+      "firstName": "Tina",
+      "lastName": "Miller",
+      "phone": "317-689-2289",
+      "email": "tina.miller@hotmail.com",
+      "id": "r1gFuVu2Z",
+      "companyId": "2"
+    },
+    {
+      "firstName": "Justin",
+      "lastName": "Mason",
+      "phone": "317-778-2387",
+      "email": "justin.mason@yahoo.com",
+      "companyId": "2",
+      "id": "rJV7aNd2b"
+    },
+    {
+      "firstName": "Sally",
+      "lastName": "Mellinger",
+      "phone": "317-367-1128",
+      "email": "sally.mellinger@gmail.com",
+      "companyId": "2",
+      "id": "BJDLTEun-"
+    },
+    {
+      "firstName": "Bill",
+      "lastName": "Reynolds",
+      "dob": "12-23-1967",
+      "phone": "812-447-1128",
+      "email": "bill.reynolds@hotmail.com",
+      "companyId": "1",
+      "id": "rJO5a4dnb"
+    },
+    {
+      "firstName": "Glen",
+      "lastName": "Hemmingway",
+      "dob": "06-23-2000",
+      "phone": "260-447-3488",
+      "email": "glen.hemmingway@yahoo.com",
+      "companyId": "2",
+      "id": "By5XRE_2W"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Smith",
+      "dob": "1989-07-11",
+      "phone": "317-557-9687",
+      "email": "john.smith@gmail.com",
+      "companyId": "1",
+      "id": "SJixiUd3W"
+    },
+    {
+      "firstName": "Stephanie",
+      "lastName": "Williams",
+      "dob": "1999-03-25",
+      "phone": "317-559-7689",
+      "email": "steph.williams@yahoo.com",
+      "companyId": "1",
+      "id": "B1OCaUu2-"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "Google",
+      "description": "Search for information about (someone or something) on the Internet using the search engine Google."
+    },
+    {
+      "id": "2",
+      "name": "Facebook",
+      "description": "Spend time using the social networking website Facebook."
+    }
+  ]
 }
