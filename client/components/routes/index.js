@@ -4,6 +4,7 @@ import {Route, Switch} from 'react-router-dom';
 import HomeContainer from '../home/HomeContainer';
 import UsersContainer from '../users/UsersContainer';
 import AddUserContainer from '../users/AddUserContainer';
+import EditUserContainer from '../users/EditUserContainer';
 import CompaniesContainer from '../companies/CompaniesContainer';
 import AddCompanyContainer from '../companies/AddCompanyContainer';
 
@@ -21,6 +22,11 @@ export const routes = {
   addUsers: {
     path: '/users/adduser',
     component: AddUserContainer,
+    exact: true,
+  },
+  editUser: {
+    path: '/users/editUser/:id',
+    component: EditUserContainer,
     exact: true,
   },
   companies: {
