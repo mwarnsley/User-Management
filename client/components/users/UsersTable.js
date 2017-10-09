@@ -11,9 +11,6 @@ class UsersTable extends Component {
     const users = data.users;
     return (
       <div id="users_table_container">
-        <Link to="/adduser" className="btn btn-default">
-          Add User
-        </Link>
         <table className="user-table table table-responsive table-striped table-hover">
           <thead>
             <tr>
