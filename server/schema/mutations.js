@@ -3,6 +3,7 @@ const {GraphQLObjectType, GraphQLString, GraphQLNonNull} = graphql;
 const axios = require('axios');
 const mongoose = require('mongoose');
 const UserType = require('./user_type');
+const CompanyType = require('./company_type');
 
 const mutation = new GraphQLObjectType({
   name: 'Mutation',
@@ -40,6 +41,16 @@ const mutation = new GraphQLObjectType({
       },
       resolve(parentValue, args) {
         return axios.patch(`http://localhost:3000/users/${args.id}`, args).then(res => res.data);
+      },
+    },
+    addCompany: {
+      type: CompanyType,
+      args: {
+        name: {type: new GraphQLNonNull(GraphQLString)},
+        description: {type: new GraphQLNonNull(GraphQLString)},
+      },
+      resolve(parentValue, args) {
+        return axios.post(`http://localhost:3000/companies`, {...args}).then(res => res.data);
       },
     },
   },
