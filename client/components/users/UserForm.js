@@ -30,7 +30,7 @@ class UserForm extends Component {
         companyId,
       },
       refetchQueries: [{query: fetchUsers}],
-    }).then(() => history.push('/'));
+    }).then(() => history.push('/users'));
   };
   onFirstNameChange = e => {
     const firstName = e.target.value;

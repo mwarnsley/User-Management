@@ -3,9 +3,20 @@ import gql from 'graphql-tag';
 import {graphql} from 'react-apollo';
 import {map} from 'lodash';
 import {NavLink} from 'react-router-dom';
+import {Button} from 'react-bootstrap';
 import fetchUsers from '../../queries/fetchUsers';
+import deleteUser from '../../mutations/deleteUser';
 
 class UsersTable extends Component {
+  deleteUser = id => {
+    const {mutate} = this.props;
+    mutate({
+      variables: {
+        id,
+      },
+      refetchQueries: [{query: fetchUsers}],
+    });
+  };
   render() {
     const {data} = this.props;
     const users = data.users;
@@ -24,6 +35,7 @@ class UsersTable extends Component {
               <th>Phone</th>
               <th>Email</th>
               <th>Company</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -36,6 +48,14 @@ class UsersTable extends Component {
                 <td>{user.phone}</td>
                 <td>{user.email}</td>
                 <td>{user.company.name}</td>
+                <td>
+                  <NavLink to={`/users/edituser/${user.id}`} className="btn btn-default btn-info">
+                    Edit
+                  </NavLink>
+                  <Button className="btn btn-default btn-danger" onClick={() => this.deleteUser(user.id)}>
+                    Delete
+                  </Button>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -45,4 +65,4 @@ class UsersTable extends Component {
   }
 }
 
-export default graphql(fetchUsers)(UsersTable);
+export default graphql(deleteUser)(graphql(fetchUsers)(UsersTable));

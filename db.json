@@ -1,15 +1,6 @@
 {
   "users": [
     {
-      "firstName": "James",
-      "lastName": "Johnson",
-      "dob": "03-13-1976",
-      "phone": "317-567-8756",
-      "email": "james.johnson@hotmail.com",
-      "id": "S1GNONd3W",
-      "companyId": "SycR4WY2-"
-    },
-    {
       "firstName": "Tina",
       "lastName": "Miller",
       "phone": "317-689-2289",
@@ -77,6 +68,24 @@
       "email": "k.johnson@hotmail.com",
       "companyId": "BywbHWt3b",
       "id": "ryPeNWFnW"
+    },
+    {
+      "firstName": "Jason",
+      "lastName": "Teller",
+      "dob": "1988-10-19",
+      "phone": "446-867-5768",
+      "email": "j.tell@hotmail.com",
+      "companyId": "SycR4WY2-",
+      "id": "HymI5BY3b"
+    },
+    {
+      "firstName": "Pam",
+      "lastName": "Underwood",
+      "dob": "1959-06-16",
+      "phone": "356-768-5589",
+      "email": "pam.underwood@yahoo.com",
+      "companyId": "B1Ixrbt3-",
+      "id": "HJIncStnW"
     }
   ],
   "companies": [
@@ -94,6 +103,26 @@
       "name": "Google",
       "description": "Search for information about (someone or something) on the Internet using the search engine Google.",
       "id": "BywbHWt3b"
+    },
+    {
+      "name": "Microsoft",
+      "description": "American multinational technology company with headquarters in Redmond, Washington. It develops, manufactures, licenses, supports and sells computer software, consumer electronics, personal computers, and services.",
+      "id": "rk1xjrKhZ"
+    },
+    {
+      "name": "IBM",
+      "description": "American multinational technology company headquartered in Armonk, New York, United States, with operations in over 170 countries.",
+      "id": "H1irjSt2-"
+    },
+    {
+      "name": "Amazon",
+      "description": "Amazon.com, Inc., doing business as Amazon, is an American electronic commerce and cloud computing company based in Seattle, Washington that was founded by Jeff Bezos on July 5, 1994.",
+      "id": "H12PirFh-"
+    },
+    {
+      "name": "Hewlett-Packard Company",
+      "description": "American multinational information technology company headquartered in Palo Alto, California.",
+      "id": "HyfjsBt2Z"
     }
   ]
 }
